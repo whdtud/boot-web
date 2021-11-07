@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorator="~{layout/layout_common}" layout:fragment="content">
+<th:block>
+	<script>
+		function onDocReady() {
+			console.log("onDocReady");
+			ajaxCall("jspCall");
+		}
+	</script>	
+	
+	<div id="content">
+		<div>this is main</div>
+	</div>
+</th:block>
+</html>
