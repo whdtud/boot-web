@@ -4,13 +4,16 @@
 <th:block>
 	<script>
 		function onDocReady() {
-			alert("onDocReady");
-			ajaxCall("jspCall");
+			console.log("onDocReady");
 		}
 	</script>	
 	
 	<div id="content">
-		<div>this is main</div>
+		<div class="container">
+			<div class="row">
+				<div>this is main</div>
+			</div>
+		</div>
 	</div>
 </th:block>
 </html>

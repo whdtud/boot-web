@@ -6,7 +6,7 @@
 
 <script>
 	$(document).ready(function() {
-		alert("document ready");
+		console.log("jsp document ready");
 	});
 	
 	$("#eventBtn").click(function() {
