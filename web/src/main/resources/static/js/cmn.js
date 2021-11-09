@@ -15,4 +15,5 @@ function ajaxCall(url) {
 
 function onclickButton() {
 	alert("cmn onclickButton");
+	
 }

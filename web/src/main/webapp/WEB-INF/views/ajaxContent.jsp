@@ -4,5 +4,16 @@
 	String message = "scriptlet";
 %>    
 
+<script>
+	$(document).ready(function() {
+		alert("document ready");
+	});
+	
+	$("#eventBtn").click(function() {
+		onclickButton();
+		$(this).hide();
+	});
+</script>
+
 <div><%=message %></div>
-<button onclick="onclickButton()">click</button>
+<button id="eventBtn">click</button>
