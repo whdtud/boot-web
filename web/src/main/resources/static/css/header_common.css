@@ -1,29 +1,16 @@
 @charset "UTF-8";
 
-#siteMenu {
-	background-color: #25a2d0;
-	height: 50px;
-}
-
 .container {
-	width: 1200px;
+	width: 1080px;
 	margin: 0 auto;
 }
 
-#siteMenu .siteMenu a {
-	color: #fff;
-	padding: 8px 0 6px 10px;
-	display: inline-block;
-	transition: color 0.3s ease;
+.headerWrap {
+	height: 141px;
 }
 
-#siteMenu .siteMenu a:first-child {
-	font-size: 22px;
-	font-weight: bold;
-}
-
-#siteMenu .siteMenu a:hover {
-	color: #ccc;
+.headerWrap .headArea {
+	text-align: left;
 }
 
 .nav {
@@ -71,8 +58,8 @@
 	width: 100%;
 }
 
-/* 화면 너비 0 ~ 1220px */
-@media (max-width: 1220px) {
+/* 화면 너비 0 ~ 1100px */
+@media (max-width: 1100px) {
 	.container {
 		width: 100%;
 	}

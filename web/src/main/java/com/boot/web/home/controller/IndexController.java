@@ -12,8 +12,4 @@ public class IndexController {
 		return "thymeleaf/index";
 	}
 	
-	@PostMapping(value="jspCall", produces="text/plain;charset=utf-8")
-	public String jspCall() {
-		return "ajaxContent";
-	}
 }
