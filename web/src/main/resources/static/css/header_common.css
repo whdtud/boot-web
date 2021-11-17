@@ -1,96 +1,58 @@
 @charset "UTF-8";
 
-.container {
-	width: 1080px;
-	margin: 0 auto;
-}
-
 .headerWrap {
+	position: relative;
 	height: 141px;
 }
 
-.headerWrap .headArea {
-	text-align: left;
-}
-
-.nav {
-	overflow: hidden;
-	padding: 25px 0;
-}
-
-.nav > div {
-	float: left;
-	width: 33.33333%;
-}
-
-.nav > div h3:before {
-	content: '';
-	width: 3px;
-	height: 3px;
-	background-color: #25a2d0;
-	border-radius: 50%;
-	position: absolute;
-	left: 0;
-	top: 6px;
-}
-
-.nav > div h3 a {
+.headerWrap .headerArea {
 	position: relative;
-	font-size: 18px;
-	color: #25a2d0;
-	font-weight: bold;
-	margin-bottom: 4px;
+	text-align: left;
+	height: 60px;
 }
 
-.nav > div h3 a:after {
-	content: '';
-	display: inline-block;
-	width: 0;
-	height: 1px;
-	background: #25a2d0;
-	transition: all .2s ease-out;
+.headerWrap .headerArea .container {
+	height: 60px;
+}
+
+.headerWrap .headerArea .container .row {
+	height: 60px;
+}
+
+.headerWrap .headerArea .globalLogo {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	top: 15px;
 }
 
-.nav > div h3:hover a:after {
-	width: 100%;
+.headerWrap .headerArea .globalLogo a {
+	overflow: hidden;
+	display: block;
+	width: 170px;
+	height: 30px;
+	background-image: url("/img/globalLogo.png");
+	text-indent: -9999px;
 }
 
-/* 화면 너비 0 ~ 1100px */
-@media (max-width: 1100px) {
-	.container {
-		width: 100%;
-	}
-	
-	.row {
-		padding: 0 15px; 
-	}
+.headerWrap .headerArea .globalMenu {
+	position: absolute;
+	top: 0;
+	left: 204px;
 }
 
-/* 화면 너비 0 ~ 1024px */
-@media (max-width: 1024px) {
-	
+.headerWrap .headerArea .globalMenu a {
+	display: inline-block;
+	position: relative;
+	padding: 18px 0 22px 0;
 }
 
-/* 화면 너비 0 ~ 960px */
-@media (max-width: 960px) {
-	
+.headerWrap .headerArea .utilMenu {
+	position: absolute;
+	right: 0;
+	text-align: right;
 }
 
-/* 화면 너비 0 ~ 768px */
-@media (max-width: 768px) {
-	.nav > div {
-		float: none;
-		width: 100%;
-	}
-	
-	.nav > div li {
-		width: 33.33333%;
-	}
-	
-	.nav > div ol {
-		margin-bottom: 10px;
-	}
+.headerWrap .headerArea .utilMenu a {
+	display: inline-block;
+	position: relative;
+	padding: 20px 0 20px 11px;
 }
