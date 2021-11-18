@@ -46,7 +46,7 @@
 }
 
 .headerWrap .headerArea .utilMenu {
-	position: absolute;
+	position: relative;
 	right: 0;
 	text-align: right;
 }
@@ -54,5 +54,33 @@
 .headerWrap .headerArea .utilMenu a {
 	display: inline-block;
 	position: relative;
+	margin: 0 0 0 10px;
 	padding: 20px 0 20px 11px;
+}
+
+.headerWrap .headerArea .utilMenu a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -5px;
+	width: 1px;
+	height: 10px;
+	background: #c2c2c2;
+}
+
+.headerWrap .headerArea .utilMenu a:first-child:after {
+	display: none;
+}
+
+.headerWrap .GNB:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 80px;
+	border-bottom: 1px solid #ddd;
 }
