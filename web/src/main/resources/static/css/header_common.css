@@ -74,6 +74,11 @@
 	display: none;
 }
 
+.headerWrap .GNB {
+	position: relative;
+	border-top: 1px solid #ddd;
+}
+
 .headerWrap .GNB:after {
 	content: "";
 	display: block;
