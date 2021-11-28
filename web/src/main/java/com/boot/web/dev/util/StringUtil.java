@@ -1,4 +1,4 @@
-package com.boot.dev.util;
+package com.boot.web.dev.util;
 
 public class StringUtil {
 

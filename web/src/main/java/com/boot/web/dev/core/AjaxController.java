@@ -1,4 +1,4 @@
-package com.boot.dev.core;
+package com.boot.web.dev.core;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

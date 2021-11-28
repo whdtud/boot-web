@@ -5,10 +5,10 @@ function ajaxCall(url) {
 		dataType: "html",
 		success: function(data) {
 			console.log(data);
-			$("#content").html(data);
+			$("#main_contents").html(data);
 		},
 		error: function(request, status, error) {
-			alert("error: ", error);
+			alert("request: " + request + ", status: " + status + ", error: " + error);
 		}
 	})
 }
