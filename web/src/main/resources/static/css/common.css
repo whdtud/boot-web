@@ -35,6 +35,15 @@ button {
 	cursor: pointer;
 }
 
+a {
+	cursor: pointer;
+}
+
+.simpleBtn {
+	display: inline-block;
+	text-align: center;
+}
+
 #pagination {
 	margin-top: 10px;
 	text-align: center;

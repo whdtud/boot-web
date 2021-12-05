@@ -77,6 +77,7 @@
 .headerWrap .GNB {
 	position: relative;
 	border-top: 1px solid #ddd;
+	z-index: 110;
 }
 
 .headerWrap .GNB:after {
@@ -88,4 +89,57 @@
 	left: 0;
 	height: 80px;
 	border-bottom: 1px solid #ddd;
+}
+
+.headerWrap .GNB .gnb {
+	height: 80px;
+}
+
+.headerWrap .GNB .gnb > li {
+	float: left;
+	margin: 0 0 0 35px;
+	height: 80px;
+}
+
+.headerWrap .GNB .gnb > li:first-child {
+	margin-left: 0;
+}
+
+.headerWrap .GNB .gnb > li .gnbDep1 {
+	display: block;
+	position: relative;
+	padding: 27px 0;
+	height: 26px;
+}
+
+.headerWrap .GNB .gnb .gnbSub {
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+
+.headerWrap .GNB .gnb .gnbSub .serviceMenu {
+	padding: 24px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.headerWrap .GNB .gnb .gnbSub .serviceMenu a {
+	margin-left: 10px;
+	padding: 0 15px;
+	border: 1px solid #c2c2c2;
+	border-radius: 17px;
+	background-color: #f9f9f9;
+	font-size: 14px;
+}
+
+.headerWrap .GNB .gnb .gnbSub .serviceMenu a:first-child {
+	margin: 0; 
+}
+
+.headerWrap .GNB .gnb .gnbSub .gnbDep2 {
+	padding: 30px 0;
+}
+
+.headerWrap .GNB .gnb .gnbSub .gnbDep2 > li {
+	float: left;
 }
